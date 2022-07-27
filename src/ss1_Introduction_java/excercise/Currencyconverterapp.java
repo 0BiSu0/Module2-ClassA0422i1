@@ -2,7 +2,7 @@ package ss1_Introduction_java.excercise;
 
 import java.util.Scanner;
 
-public class Currencyconverterapp {
+public class CurrencyConverterApp {
     public static void main(String[] args) {
         double vnd = 23000;
         double usd;

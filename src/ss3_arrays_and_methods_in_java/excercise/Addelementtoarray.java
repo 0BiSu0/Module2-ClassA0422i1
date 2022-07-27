@@ -1,6 +1,6 @@
 package ss3_arrays_and_methods_in_java.excercise;
 import java.util.*;
-public class Addelementtoarray {
+public class AddElementToArray {
     public static void main(String args[]) {
         String[] arr = {"1", "2" , "3", "4", "5"};
         System.out.println("orgin arr:\n"+Arrays.toString(arr));

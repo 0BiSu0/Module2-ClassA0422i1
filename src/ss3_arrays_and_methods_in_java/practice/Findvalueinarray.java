@@ -2,7 +2,7 @@ package ss3_arrays_and_methods_in_java.practice;
 
 import java.util.Scanner;
 
-public class Findvalueinarray {
+public class FindValueInArray {
     public static void main(String[] args) {
         String[] students = {"Christian", "Michael", "Camila", "Siema", "Tanya","Connor", "Zachariah", "Mallorry", "Zoe", "Emily"};
         Scanner sc = new Scanner(System.in);

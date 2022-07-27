@@ -2,7 +2,7 @@ package ss2_loop_in_java.excercise;
 
 import java.util.Scanner;
 
-public class Showprimenumbers {
+public class ShowPrimeNumbers {
     public static void main(String[] args) {
         int n;
         int status = 1;

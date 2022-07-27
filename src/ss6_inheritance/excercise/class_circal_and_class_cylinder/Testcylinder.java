@@ -2,9 +2,9 @@ package ss6_inheritance.excercise.class_circal_and_class_cylinder;
 
 import java.util.Scanner;
 
-public class Testcylinder {
+public class TestCylinder {
         public static void main(String[] args) {
-            Classcylinder s = new Classcylinder();
+            ClassCylinder s = new ClassCylinder();
             Scanner sc = new Scanner(System.in);
             System.out.println("input height:");
             double height = sc.nextDouble();

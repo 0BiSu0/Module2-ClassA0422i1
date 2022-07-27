@@ -1,8 +1,8 @@
 package ss6_inheritance.excercise.class_circal_and_class_cylinder;
 
-public class Classcylinder extends Classcircle{
+public class ClassCylinder extends ClassCircle {
     double height;
-    Classcylinder (){
+    ClassCylinder(){
 
     }
     public double getHeight() {
@@ -13,10 +13,10 @@ public class Classcylinder extends Classcircle{
         this.height = height;
     }
 
-    Classcylinder (double height){
+    ClassCylinder(double height){
         this.height=height;
     }
-    Classcylinder (double height,double radius, String color){
+    ClassCylinder(double height, double radius, String color){
         this.height=height;
         this.radius = radius;
         this.color = color;

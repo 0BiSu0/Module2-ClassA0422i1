@@ -2,7 +2,7 @@ package ss2_loop_in_java.practice;
 
 import java.util.Scanner;
 
-public class Designmenusforapps {
+public class DesignMenusForApps {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("---------Menu---------");

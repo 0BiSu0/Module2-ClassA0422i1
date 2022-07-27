@@ -1,6 +1,6 @@
 package ss3_arrays_and_methods_in_java.excercise;
 import java.util.*;
-public class Removeelementfromarray {
+public class RemoveElementFromArray {
     public static void main(String args[]) {
         String[] arr = {"1", "5" , "3", "4", "2", "5"};
         System.out.println("Mang ban dau:\n"+Arrays.toString(arr));

@@ -1,6 +1,6 @@
 package ss3_arrays_and_methods_in_java.excercise;
 
-public class Findtheminimunvalueinarray {
+public class FindTheMinimunValueInArray {
     public static void main(String[] args) {
         int numbers[] = new int[]{1,2,3,4,5,6,7,8,9};
         int min = numbers[0];

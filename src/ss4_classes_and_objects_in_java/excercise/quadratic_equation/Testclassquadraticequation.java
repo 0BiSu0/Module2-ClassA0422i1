@@ -2,7 +2,7 @@ package ss4_classes_and_objects_in_java.excercise.quadratic_equation;
 
 import java.util.Scanner;
 
-public class Testclassquadraticequation {
+public class TestClassQuadraticEquation {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhap a: ");
@@ -11,7 +11,7 @@ public class Testclassquadraticequation {
         double b = scanner.nextDouble();
         System.out.println("Nhap c: ");
         double c = scanner.nextDouble();
-        Classquadraticequation pt1 = new Classquadraticequation(a,b,c);
+        ClassQuadraticEquation pt1 = new ClassQuadraticEquation(a,b,c);
         if (pt1.getDiscriminant()==0){
             System.out.print("Phuong trinh co 1 nghiem: \n"+pt1.getRoot1());
         }else if (pt1.getDiscriminant()>=0){

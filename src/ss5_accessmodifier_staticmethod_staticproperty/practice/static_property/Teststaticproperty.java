@@ -1,6 +1,6 @@
 package ss5_accessmodifier_staticmethod_staticproperty.practice.static_property;
 
-public class Teststaticproperty {
+public class TestStaticProperty {
     public static void main(String[] args) {
         Car car1 = new Car("Mazda 3", "Skyactiv 3");
         System.out.println(Car.numberOfCars);

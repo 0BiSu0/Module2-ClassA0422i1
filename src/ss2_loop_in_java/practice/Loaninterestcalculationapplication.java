@@ -1,6 +1,6 @@
 package ss2_loop_in_java.practice;
 import java.util.Scanner;
-public class Loaninterestcalculationapplication {
+public class LoanInterestCalculationApplication {
     public static void main(String[] args) {
         double money = 0;
         int month = 1;

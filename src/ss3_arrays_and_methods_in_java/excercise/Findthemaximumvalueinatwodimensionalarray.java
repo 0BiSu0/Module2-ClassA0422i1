@@ -1,7 +1,7 @@
 package ss3_arrays_and_methods_in_java.excercise;
 import java.util.Scanner;
 
-public class Findthemaximumvalueinatwodimensionalarray {
+public class FindTheMaximumValueInATwoDimensionalArray {
     public static void main(String[] args) {
         int m, n;
         Scanner scanner = new Scanner(System.in);

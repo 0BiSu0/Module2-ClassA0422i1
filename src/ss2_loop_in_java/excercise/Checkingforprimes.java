@@ -2,7 +2,7 @@ package ss2_loop_in_java.excercise;
 
 import java.util.Scanner;
 
-public class Checkingforprimes {
+public class CheckingForPrimes {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a Number:   ");

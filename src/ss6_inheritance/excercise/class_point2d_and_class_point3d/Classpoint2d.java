@@ -1,11 +1,11 @@
 package ss6_inheritance.excercise.class_point2d_and_class_point3d;
-public class Classpoint2d {
+public class ClassPoint2d {
     public float x,y;
 
-    public Classpoint2d() {
+    public ClassPoint2d() {
     }
 
-    public Classpoint2d(float x, float y) {
+    public ClassPoint2d(float x, float y) {
         this.x = x;
         this.y = y;
     }

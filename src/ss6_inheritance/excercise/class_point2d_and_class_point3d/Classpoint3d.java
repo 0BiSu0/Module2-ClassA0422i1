@@ -1,14 +1,14 @@
 package ss6_inheritance.excercise.class_point2d_and_class_point3d;
 
-public class Classpoint3d extends Classpoint2d{
+public class ClassPoint3d extends ClassPoint2d {
     public float z ;
 
-    public Classpoint3d(float x, float y, float z) {
+    public ClassPoint3d(float x, float y, float z) {
         super(x, y);
         this.z = z;
     }
 
-    public Classpoint3d() {
+    public ClassPoint3d() {
     }
 
     public float getZ() {

@@ -2,7 +2,7 @@ package ss2_loop_in_java.excercise;
 
 import java.util.Scanner;
 
-public class Showprimeslessthan100 {
+public class ShowPrimesLessThan100 {
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Enter N = :");

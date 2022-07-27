@@ -1,6 +1,6 @@
 package ss6_inheritance.excercise.class_circal_and_class_cylinder;
 
-public class Classcircle {
+public class ClassCircle {
     double radius ;
     String color;
     final double PI = 3.14;
@@ -20,10 +20,10 @@ public class Classcircle {
         this.color = color;
     }
 
-    Classcircle(){
+    ClassCircle(){
 
     }
-    Classcircle(double radius, String color){
+    ClassCircle(double radius, String color){
         this.radius = radius;
         this.color = color;
     }
