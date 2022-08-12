@@ -1,13 +1,13 @@
 package ss6_inheritance.excercise.class_point_and_class_moveablepoint;
 
-public class Classpoint {
-    float x = 0.0f;
-    float y = 0.0f;
+public class ClassPoint {
+     private float x = 0.0f;
+     private float y = 0.0f;
 
-    public Classpoint() {
+    public ClassPoint() {
     }
 
-    public Classpoint(float x, float y) {
+    public ClassPoint(float x, float y) {
         this.x = x;
         this.y = y;
     }

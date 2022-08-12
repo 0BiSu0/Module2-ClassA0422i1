@@ -1,6 +1,6 @@
 package ss6_inheritance.excercise.class_point_and_class_moveablepoint;
 
-public class ClassMoveablePoint extends Classpoint{
+public class ClassMoveablePoint extends ClassPoint {
     private float xSpeed = 0.0f;
     private float ySpeed = 0.0f;
 
@@ -47,8 +47,8 @@ public class ClassMoveablePoint extends Classpoint{
     }
 
     public ClassMoveablePoint move() {
-        this.x += xSpeed;
-        this.y += ySpeed;
+        super.setX(super.getX()+ xSpeed);
+        super.setY(super.getY()+ ySpeed);
         return this;
     }
     @Override

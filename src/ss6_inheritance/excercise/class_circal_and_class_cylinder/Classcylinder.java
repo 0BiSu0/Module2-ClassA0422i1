@@ -1,7 +1,9 @@
 package ss6_inheritance.excercise.class_circal_and_class_cylinder;
 
 public class ClassCylinder extends ClassCircle {
-    double height;
+   private double height;
+   private double radius;
+   private String color;
     ClassCylinder(){
 
     }
@@ -22,7 +24,7 @@ public class ClassCylinder extends ClassCircle {
         this.color = color;
     }
     public double Volume(){
-        return super.PI*getRadius()*getRadius()*height;
+        return Math.PI*getRadius()*getRadius()*height;
     }
 
     @Override

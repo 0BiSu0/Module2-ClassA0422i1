@@ -1,9 +1,9 @@
 package ss6_inheritance.excercise.class_circal_and_class_cylinder;
 
 public class ClassCircle {
-    double radius ;
-    String color;
-    final double PI = 3.14;
+   private double radius ;
+    private String color;
+    private final double PI = 3.14;
     public double getRadius() {
         return radius;
     }
