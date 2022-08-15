@@ -1,7 +1,5 @@
 package ss10_dsa_stack_queue.practice.implement_stack_by_using_linkedlist;
 
-
-
 public class GenericStackClient {
     public static void stackOfIStrings(){
         MyGenericStack<String> stack = new MyGenericStack<>();
@@ -29,15 +27,13 @@ public class GenericStackClient {
         System.out.println("2.2 Pop elements from stack: ");
         while (!stack.isEmpty()){
             System.out.printf("%d", stack.pop());
-
-
         }
         System.out.println("\n 3.3 Size of stack after pop operations: " + stack.size());
     }
         public static void main(String[] args) {
             System.out.println("1. Stack of integers");
             stackOfIntegers();
-            System.out.println("\2. Stack of Strings");
+            System.out.println("2. Stack of Strings");
             stackOfIStrings();
         }
 
