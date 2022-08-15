@@ -1,99 +1,116 @@
-/*
 package ss9_dsa_danh_sach.exercise.linkedlist;
 
+public class LinkedList<E> {
 
-import com.sun.xml.internal.ws.policy.EffectiveAlternativeSelector;
-import ss10_dsa_stack_queue.practice.implement_queue_by_using_linkedlist.Node;
-import sun.font.CreatedFontTracker;
+    public class Node {
+        private Node next;
+        private Object data;
 
-public class LinkedList {
-    public Node head;
-    public int numNodes;
-    public LinkedList(Object data){
-        head = new Node(data);
-    }
-    public void add(int index. E element){
-        Node temp = head;
-        Node holder;
-        for (int i = 0; i < index - 1 && temp.next != null; i++){
-            temp = temp.next;
+        public Node(E data) {
+            this.data = data;
+            next = null;
         }
-        holder = temp.next;
-        temp.next = new Node(element);
-        temp.next.next = holder;
+
+        public Object getData() {
+            return data;
+        }
+    }
+
+    private Node head;
+    private int numNodes = 0;
+
+    public LinkedList(E element) {
+        head = new Node(element);
+    }
+
+    public void add(int index, E element) {
+        Node temp = head;
+        int i = 0;
+        while(i < index - 1) {
+            temp = temp.next;
+            i++;
+        }
+        Node holder = temp.next;
+        temp.next = (Node)element;
+        ((Node)element).next = holder;
         numNodes++;
     }
-    public void addFirst(Object data){
+
+    public void addFirst(E element) {
         Node temp = head;
-        head = new Node(data);
+        head = (Node)element;
         head.next = temp;
         numNodes++;
-
     }
-    public void addLast(Object data){
-        Node temp = new head;
-        for (int i = 0; i< numNodes; i++){
+
+    public void addLast(E element) {
+        Node temp = head;
+        while(temp.next != null) {
             temp = temp.next;
         }
-        temp.next = new Node(data);
+        temp.next = (Node)element;
         numNodes++;
     }
-    public void remove(int index){
-        Node current = head;
-        Node temp = null;
-        for (int i = 0; i < index; i++){
-            temp = current;
-            current = current.next;
+
+    public E remove(int index) {
+        Node temp = head;
+        int i = 0;
+        while(i < index - 1) {
+            temp = temp.next;
+            i++;
         }
-        temp.next = current.next;
-        numNodes++;
-        return(E) current;
+        temp.next = temp.next.next;
+        numNodes--;
+        return (E)temp;
     }
-    public boolean remove(Object data){
-        Node current = head;
-        int count = 0;
-        for (int i = 0; i < numNodes; i++){
-            current = current.next;
-            count++;
+
+    public boolean contains(E o) {
+        Node temp = head;
+        while (temp.next != null) {
+            if (temp.data.equals(o)) {
+                return true;
+            }
+            temp = temp.next;
         }
-        if (current.data == data){
-            remove(count);
+        return false;
+    }
+
+    public boolean remove(Object e) {
+        Node temp = head;
+        if (contains((E)e)) {
+            int index = 0;
+            int i = 0;
+            while(!temp.next.equals(e)) {
+                temp = temp.next;
+                index++;
+            }
+            temp = head;
+            while(i < index - 1) {
+                temp = temp.next;
+            }
+            temp.next = temp.next.next;
+            numNodes--;
             return true;
         }
         return false;
     }
-    public E get(int i){
-        Node current = head;
-        for (int j = 0; j < i; j++){
-            current = current.next;
-        }
-        E current1 = (E) current.getData();
-        return current1;
-    }
-    public int size(){
+
+    public int size() {
         return numNodes;
     }
-    public boolean contains(E data){
-        Node current = head;
-        for (int i = 0; i < numNodes; i++){
-            current = current.next;
+
+    public E clone() {
+        Node cloneHead = new Node((E)head);
+        Node temp = head;
+        Node tempClone = cloneHead;
+        while(temp.next != null) {
+            tempClone.next = new Node((E)temp.next);
+            temp = temp.next;
+            tempClone = tempClone.next;
         }
-        if (current.data == data){
-            return true;
-        }
-        return false;
+        return (E)cloneHead;
     }
-    public int indexOf(E data){
-        Node current = head;
-        int count = 0;
-        for (int i = 0; i < numNodes; i++){
-            current = current.next;
-            count++;
-        }
-        if(current.data == data){
-            return count;
-        }
-        return  -1;
-    }
+
+
+
 }
-*/
