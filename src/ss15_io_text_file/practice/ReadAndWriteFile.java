@@ -1,4 +1,4 @@
-package ss15_io_text_file.excercise;
+package ss15_io_text_file.practice;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -22,7 +22,8 @@ public class ReadAndWriteFile {
         }
         return numbers;
     }
-    public void writeFile(String filePath, int max){
+
+    public void writeFile(String filePath, int max) {
         try {
             FileWriter writer = new FileWriter(filePath, true);
             BufferedWriter bufferedWriter = new BufferedWriter(writer);

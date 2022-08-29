@@ -1,4 +1,4 @@
-package ss15_io_text_file.excercise;
+package ss15_io_text_file.practice;
 
 import java.util.List;
 
