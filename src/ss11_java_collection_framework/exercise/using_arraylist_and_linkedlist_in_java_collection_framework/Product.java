@@ -1,4 +1,5 @@
 package ss11_java_collection_framework.exercise.using_arraylist_and_linkedlist_in_java_collection_framework;
+import java.util.List;
 
 public class Product {
     private int id;
@@ -9,6 +10,13 @@ public class Product {
         this.id = id;
         this.name = name;
         this.price = price;
+    }
+
+    public Product(List<String> productlist) {
+    }
+
+    public Product() {
+
     }
 
     public int getId() {
@@ -34,6 +42,7 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
+
 
     @Override
     public String toString() {
